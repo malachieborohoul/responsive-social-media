@@ -1,0 +1,154 @@
+main{
+    position: relative;
+    top: 6rem;
+}
+main .container{
+    display: grid;
+    grid-template-columns: 18vw auto 20vw;
+    gap: 2rem;
+    position: relative;
+}
+
+/* -----------------LEFT SIDE-------------- */
+main .container .left{
+    height: max-content;
+    position: sticky;
+    top: var(--stiky-top-left);
+}
+
+main .container .left .profile{
+    display: flex;
+    gap: 1rem;
+    border-radius: var(--card-border-radius);
+    background: var(--color-white);
+    padding: var(--card-padding);
+    align-items: center;
+    width: 100%;
+}
+
+main .container .left .name{
+    display: flex;
+    flex-direction: column;
+}
+
+/* ------------- SIDEBAR ---------- */
+
+.left .sidebar{
+    margin-top: 0.9rem;
+    background: var(--color-white);
+    border-radius: var( --card-border-radius);
+}
+
+.left .sidebar .menu-item{
+    position: relative;
+    display: flex;
+    height: 4.5rem;
+    align-items: center;
+    padding-left: 2rem;
+    gap: 2rem;
+    width: 100%;
+    transition: all 300ms ease;
+    cursor: pointer;
+}
+
+.left .sidebar .menu-item:hover{
+    background: var(--color-light);
+}
+
+.left .sidebar .menu-item.active, main .container .left .sidebar .menu-item.active .icon{
+    color: var(--color-primary);
+    background: var(--color-light);
+  
+}
+
+.left .sidebar .menu-item.active::before{
+    position: absolute;
+    content: "";
+    width: 0.5rem;
+    height: 100%;
+    background: var(--color-primary);
+    left: 0;
+    border-top-left-radius: 1rem ;
+}
+
+.left .sidebar .menu-item .icon{
+    color: var(--color-gray);
+}
+
+.left .sidebar .menu-item .notifications-count{
+    position: absolute;
+    width: 2rem;
+    height: 1.5rem;
+    border-radius: 45%;
+    background: var(--color-danger);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    color: white;
+    top: 0.5rem;
+}
+.left .sidebar .menu-item .notifications-popup{
+    position: absolute;
+    left: 16rem;
+    width: 33rem;
+    top: 0;
+    background: var(--color-white);
+    display: none;
+}
+.left .sidebar .menu-item .notifications-popup::before{
+    position: absolute;
+
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    background: white;
+    left: -1rem;
+    transform: rotate(45deg);
+    top: 1.5rem;
+    z-index: -1; 
+}
+
+.left .sidebar .menu-item .notifications-popup{
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+
+}
+.left .sidebar .menu-item .notifications-popup .notification{
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.left .sidebar .menu-item .notifications-popup .notification .text span:nth-of-type(3){
+    font-size: 0.8rem;
+}
+
+.left .sidebar .menu-item .messages-count{
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background: var(--color-danger);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    color: white;
+    top: 0.5rem;
+    left: 2.5rem;
+}
+
+
+
+/* ----------------- MIDDLE --------------- */
+
+.middle .stories{
+    display: flex;
+    gap: 0.7rem;
+}
+
+
+
