@@ -14,6 +14,15 @@ import Profile3 from '../../images/profile-3.jpg'
 import Profile4 from '../../images/profile-4.jpg'
 import Profile5 from '../../images/profile-5.jpg'
 import Profile6 from '../../images/profile-6.jpg'
+
+import Feed1 from '../../images/feed-1.jpg'
+import Feed2 from '../../images/feed-2.jpg'
+import Feed3 from '../../images/feed-3.jpg'
+import Feed4 from '../../images/feed-4.jpg'
+import Feed5 from '../../images/feed-5.jpg'
+import Feed6 from '../../images/feed-6.jpg'
+import Feed7 from '../../images/feed-7.jpg'
+
 import Notification from './Notification';
 import Story from '../Story/Story';
 import Story1 from '../../images/story-1.jpg'
@@ -24,6 +33,7 @@ import Story5 from '../../images/story-5.jpg'
 import Story6 from '../../images/story-6.jpg'
 import CreatePost from '../CreatePost/CreatePost';
 import ProfilePhoto from '../ProfilePhoto/ProfilePhoto';
+import Feed from '../Feed/Feed';
 
 
 const Main = ()=>{
@@ -111,6 +121,16 @@ const Main = ()=>{
                     </div>
 
                     <CreatePost/>
+
+                    <div className="feeds">
+                        <Feed profileImg={Profile2} feedImg={Feed1} name="Bradley Cooper"/>
+                        <Feed profileImg={Profile3} feedImg={Feed2} name="Mani Bella"/>
+                        <Feed profileImg={Profile4} feedImg={Feed3} name="Love Delog"/>
+                        <Feed profileImg={Profile5} feedImg={Feed4} name="Cona Mass"/>
+                        <Feed profileImg={Profile6} feedImg={Feed5} name="Ive Yavier"/>
+                        <Feed profileImg={Profile1} feedImg={Feed6} name="Mali Music"/>
+                        <Feed profileImg={Profile4} feedImg={Feed7} name="Brad Pit"/>
+                    </div>
                 </div>
                 <div className="right">
                     Right

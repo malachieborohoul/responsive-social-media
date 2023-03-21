@@ -1,0 +1,70 @@
+.feed{
+    background: var(--color-white);
+    margin-top: 1rem;
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.user{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    
+}
+
+.feed .feedImg img{
+    width: 100%;
+    border-radius: 0.9rem;
+}
+
+.interaction-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem 1rem;
+}
+.interaction-buttons .left, .right{
+    display: flex;
+    gap: 1rem;
+}
+
+.liked-by{
+    margin-top: 0.6rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    font-size: 0.9rem;
+
+}
+
+.liked-by img{
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 3px solid white;
+    top: -0.3rem;
+}
+.liked-by img:nth-child(2){
+    left: 0.7rem;
+}
+.liked-by img:nth-child(3){
+    left: 1.7rem;
+}
+
+.caption{
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+.comments{
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+
+}
