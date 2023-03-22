@@ -85,25 +85,9 @@ body{
     color: var(--color-gray);
 }
 
-.search-bar{
-    display: flex;
-    width: 30rem;
-    height: 2.7rem;
-    background: var(--color-light);
-    border-radius: var(--border-radius);
-    align-items: center;
-    padding: 0 1rem;
-    gap: 1rem;
-}
-.search-bar input{
-    background: transparent;
-    height: 100%;
-    width: 100%;
-    font-size: 1rem;
-}
 
-.search-bar input::placeholder{
-    font-size: 1rem;
-    color: var(--color-gray);
-}
+/* =============== MEDIA  QUERIES FOR SMALL LAPTOPS AND BIG TABLETS ===================== */
 
+@media screen and (max-with: 1200px) {
+    
+}

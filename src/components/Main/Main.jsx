@@ -34,6 +34,8 @@ import Story6 from '../../images/story-6.jpg'
 import CreatePost from '../CreatePost/CreatePost';
 import ProfilePhoto from '../ProfilePhoto/ProfilePhoto';
 import Feed from '../Feed/Feed';
+import MessagesCard from '../MessagesCard/MessagesCard';
+import Request from '../Request/Request';
 
 
 const Main = ()=>{
@@ -133,7 +135,10 @@ const Main = ()=>{
                     </div>
                 </div>
                 <div className="right">
-                    Right
+                    <MessagesCard/>
+                    <h4 className='text-muted'>Requests</h4>
+                    <Request fName='Somy' lName="Dut"/>
+                    <Request fName='Salmy' lName="Gondy"/>
                 </div>
 
             </div>

@@ -18,3 +18,17 @@
     background: var(--color-primary);
     color: var(--color-white);
 }
+
+.btn-secondary{
+    background: var(--color-secondary);
+    color: var(--color-white);
+}
+
+.btn-light{
+    background: var(--color-light);
+    color: var(--color-dark);
+}
+
+.btn-light:hover{
+    background: var(--color-gray);
+}

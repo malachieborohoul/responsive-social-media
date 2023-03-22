@@ -1,0 +1,21 @@
+.request{
+    margin-top: 1rem;
+    width: 100%;
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+}
+.request .heading{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.request .heading .info h4{
+    font-weight: 400;
+}
+
+.request .buttons{
+    margin-top: 1rem;
+    display: flex;
+}

@@ -1,9 +1,9 @@
 import './Button.css'
 import React from "react";
 
-const Button = ({text})=>{
+const Button = ({text, color="btn-primary"})=>{
     return (
-        <label className="btn btn-primary " htmlFor="">{text}</label>
+        <label className={`btn ${color}`} htmlFor="">{text}</label>
     )
 }
 

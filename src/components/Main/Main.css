@@ -147,8 +147,21 @@ main .container .left .name{
 
 .middle .stories{
     display: flex;
-    gap: 0.7rem;
+    gap: 0.4rem;
 }
+
+/* -----------------RIGHT------------------- */
+
+main .container .right{
+    height: max-content;
+    position: sticky;
+    top: var(--stiky-top-right);
+    bottom: 0;
+}
+
+
+
+
 
 
 
